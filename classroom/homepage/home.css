@@ -34,6 +34,14 @@ main {
     margin: 50px 15px;
 }
 
+main .links {
+    margin-bottom: 20px;
+}
+
+main .links a {
+    margin: 0;
+}
+
 main a {
     padding: 10px;
     margin: 15px;
