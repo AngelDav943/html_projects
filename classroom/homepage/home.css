@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    border-bottom: solid gray 1px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div {
+    height: 100%;
+}
+
+nav div img {
+    height: 30px;
+    margin: 15px;
+}
+
+nav div img.icon {
+    height: 100%;
+    margin: 0px;
+}
+
+nav div img.account {
+    height: 50px;
+    margin: 5px;
+}
+
+main {
+    margin: 50px 15px;
+}
+
+main a {
+    padding: 10px;
+    margin: 15px;
+}
+
+.classes {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+}
+
+.class {
+    width: 300px;
+    height: 350px;
+    border: solid gray 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.class .top {
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class .top .title {
+    margin: 10px;
+}
+
+.class .top img.menu {
+    height: 20px;
+    margin: 15px;
+}
+
+.class .bottom {
+    height: 40px;
+    border-top: solid gray 1px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+.bottom a {
+    margin: 0px;
+}
+
+.bottom a img {
+    height: 40px;
+}
