@@ -3,33 +3,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
-    border-bottom: solid gray 1px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav div {
-    height: 100%;
-}
-
-nav div img {
-    height: 30px;
-    margin: 15px;
-}
-
-nav div img.icon {
-    height: 100%;
-    margin: 0px;
-}
-
-nav div img.account {
-    height: 50px;
-    margin: 5px;
-}
-
 main {
     margin: 50px 15px;
 }
@@ -42,11 +15,6 @@ main .links a {
     margin: 0;
 }
 
-main a {
-    padding: 10px;
-    margin: 15px;
-}
-
 .classes {
     display: flex;
     flex-wrap: wrap;
@@ -56,7 +24,7 @@ main a {
 .class {
     width: 300px;
     height: 350px;
-    border: solid gray 1px;
+    border: solid #dadce0 1px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -75,7 +43,11 @@ main a {
 }
 
 .class .top .title {
-    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 .class .top img.menu {
@@ -85,7 +57,7 @@ main a {
 
 .class .bottom {
     height: 40px;
-    border-top: solid gray 1px;
+    border-top: solid #dadce0 1px;
     padding: 15px;
     display: flex;
     flex-direction: row-reverse;

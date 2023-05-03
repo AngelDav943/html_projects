@@ -1,0 +1,113 @@
+main {
+    margin: auto;
+    max-width: 62.5rem;
+    width: calc( 100% - 2rem);
+}
+
+.thumbnail {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 15rem;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.thumbnail span {
+    padding: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.thumbnail img {
+    height: 40px;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    grid-gap: 20px;
+}
+
+.upcoming {
+    height: 200px;
+    padding: 20px;
+    border: solid #dadce0 1px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upcoming .title {
+    font-weight: bold;
+}
+
+.upcoming a {
+    float: right;
+}
+
+.stream {
+    width: 100%;
+    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stream .input {
+    display: flex;
+    align-items: center;
+}
+
+.stream article {
+    border: solid #dadce0 1px;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+    padding-left: 20px;
+    width: calc( 100% - 30px);
+}
+
+.stream article img {
+    height: 50px;
+}
+
+.stream article .account {
+    height: 50px;
+}
+
+.stream article .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stream article .content {
+    margin: 0px;
+}
+
+.stream article .config {
+    height: 20px;
+    padding: 20px;
+}
+
+article .post {
+    display: flex;
+    align-items: center;
+}
+
+article .post p {
+    margin: 1em;
+    font-size: medium;
+}
+
+article .content p {
+    margin: 1em;
+    font-size: small;
+}
