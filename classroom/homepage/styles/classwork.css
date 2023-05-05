@@ -82,3 +82,16 @@ hr {
 .material:hover .menu {
     display: block;
 }
+
+/* dark mode */
+body.night {
+    color: white;
+}
+
+body.night img {
+    filter: contrast(0) brightness(10);
+}
+
+body.night .date {
+    color: #ffffff9c;
+}

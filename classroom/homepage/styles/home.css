@@ -72,3 +72,18 @@ main .links a {
 .bottom a img {
     height: 40px;
 }
+
+/* dark mode */
+body.night .class{
+    background-color: #000f3e;
+    border-color: #000f3e;
+}
+
+body.night .bottom {
+    border-color: #00000000;
+    background-color: #00000045;
+}
+
+body.night .class img {
+    filter: contrast(0) brightness(10);
+}

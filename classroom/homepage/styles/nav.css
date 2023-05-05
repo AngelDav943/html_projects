@@ -40,17 +40,39 @@ nav a {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0px 20px;
     text-decoration: none;
     color: gray;
 }
 
+nav .center a {
+    padding: 0px 20px;
+}
+
 nav a.selected {
-    color: #1967d2;
+    color: #1967d2 !important;
     border: solid #00000000 5px;
     border-bottom: solid #1967d2 5px;
 }
 
 nav a:hover {
     background-color: #8080801c;
+}
+
+/* dark mode */
+body.night {
+    background-color: #141222;
+}
+
+body.night nav {
+    background-color: #000a2d;
+    border-bottom: solid #081438 1px;
+    color: white;
+}
+
+body.night nav img {
+    filter: contrast(0) brightness(10);
+}
+
+body.night nav a {
+    color: white;
 }

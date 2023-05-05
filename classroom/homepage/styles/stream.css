@@ -111,3 +111,21 @@ article .content p {
     margin: 1em;
     font-size: small;
 }
+
+/* dark mode */
+body.night {
+    color: white;
+}
+
+body.night article img{
+    filter: contrast(0) brightness(10);
+}
+
+body.night a {
+    color: white;
+}
+
+body.night article {
+    background-color: #334d7a;
+    border-color: #548ac9;
+}
