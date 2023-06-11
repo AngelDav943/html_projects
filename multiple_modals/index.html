@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/inputs.css">
+    <link rel="stylesheet" href="styles/modals.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/arraydisplay.js"></script>
+</head>
+<body>
+    <main>
+        <a href="#" class="button open_modal" id="push">push()</a>
+        <a href="#" class="button open_modal" id="pop">pop()</a>
+        <a href="#" class="button open_modal" id="indexOf">indexOf()</a>
+        <a href="#" class="button open_modal" id="filter">filter()</a>
+        <a href="#" class="button open_modal" id="map">map()</a>
+        <a href="#" class="button open_modal" id="forEach">forEach()</a>
+        <a href="#" class="button open_modal" id="sort">sort()</a>
+        <a href="#" class="button open_modal" id="find">find()</a>
+        <a href="#" class="button open_modal" id="join">join()</a>
+        <a href="#" class="button open_modal" id="shift">shift()</a>
+        <a href="#" class="button open_modal" id="unshift">unshift()</a>
+        <a href="#" class="button open_modal" id="slice">slice()</a>
+        <a href="#" class="button open_modal" id="splice">splice()</a>
+        <a href="#" class="button open_modal" id="reverse">reverse()</a>
+        <a href="#" class="button open_modal" id="lastIndexOf">lastIndexOf()</a>
+        <a href="#" class="button open_modal" id="includes">includes()</a>
+        <a href="#" class="button open_modal" id="concat">concat()</a>
+        <a href="#" class="button open_modal" id="some">some()</a>
+        <a href="#" class="button open_modal" id="every">every()</a>
+        <a href="#" class="button open_modal" id="reduce">reduce()</a>
+        <a href="#" class="button open_modal" id="from">from()</a>
+    </main>
+
+    <section class="modal" id="push">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.push()</h2>
+                <p>El <span class="code">push()</span> agrega un nuevo elemento al final de un arreglo.</p>
+                <div class="row">
+                    <input type="text" id="push_input">
+                    <a href="#" class="button invert" id="push_button">push</a>
+                </div>
+
+                <div class="row array_container" id="push_result"></div>
+            </div>
+
+            <div class="row buttons">
+                <a href="#" class="button invert" id="push_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_push.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="pop">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.pop()</h2>
+                <p>El metodo de <span class="code">pop()</span> método elimina el último elemento de un arreglo.</p>
+                <div class="row">
+                    <a href="#" class="button invert" id="pop_button">pop</a>
+                </div>
+                <div class="row array_container" id="pop_result"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button invert" id="pop_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_pop.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="indexOf">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.indexOf()</h2>
+                <p>
+                    El método de <span class="code">indexOf()</span> devuelve el primer índice (posición) de un valor especificado
+                    y devuelve -1 si no se encuentra el valor.
+                </p>
+                <div class="row">
+                    <input type="text" id="indexOf_input">
+                    <a href="#" class="button invert" id="indexOf_button">indexOf</a>
+                    <div id="indexOf_result"></div>
+                </div>
+                <div class="row array_container" id="indexOf_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_indexOf.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="filter">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.filter()</h2>
+                <p>
+                    El método de <span class="code">filter()</span> crea un nuevo arreglo con los
+                    elementos que pasen una prueba proporcionada por una función.
+                </p>
+                <div class="row">
+                    <span>number >= <input type="number" id="filter_input"></span>
+                    <a href="#" class="button invert" id="filter_button">filter</a>
+                </div>
+                <div class="row array_container" id="filter_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_filter.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="map">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.map()</h2>
+                <p>
+                    <span class="code">map()</span> crea un nuevo arreglo con los elementos
+                    que fueron modificados por una función.
+                </p>
+                <div class="row">
+                    <span style="width: 40%;">number * </span>
+                    <input type="number" id="map_input">
+                    <a href="#" class="button invert" id="map_button">map</a>
+                </div>
+                <div class="row array_container" id="map_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button invert" id="map_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_map.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="forEach">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.forEach()</h2>
+                <p>
+                    El método de <span class="code">forEach()</span> llama a una función pasando por cada elemento de un arreglo.
+                </p>
+                <div class="row">
+                    <a href="#" class="button invert" id="forEach_button">forEach</a>
+                </div>
+                <div class="row array_container" id="forEach_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_forEach.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="sort">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.sort()</h2>
+                <p>
+                    El método <span class="code">sort()</span> ordena un arreglo alfabéticamente.
+                </p>
+                <div class="row">
+                    <a href="#" class="button invert" id="sort_button">sort</a>
+                </div>
+                <div class="row array_container" id="sort_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button invert" id="sort_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_sort.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="find">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.find()</h2>
+                <p>
+                    El método <span class="code">find()</span> devuelve el primer elemento que pasa una prueba.
+                </p>
+                <div class="row">
+                    <input type="text" id="find_input">
+                    <a href="#" class="button invert" id="find_button">find</a>
+                </div>
+                <div class="row array_container" id="find_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button invert" id="find_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_find.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="join">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.join()</h2>
+                <p>
+                    El método <span class="code">join()</span> devuelve el primer elemento que pasa una prueba.
+                </p>
+                <div class="row">
+                    <input type="text" id="join_input">
+                    <a href="#" class="button invert" id="join_button">join</a>
+                </div>
+                <span class="code" id="join_result"></span>
+                <div class="row array_container" id="join_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button invert" id="join_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_join.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="shift">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.shift()</h2>
+                <p>El metodo de <span class="code">shift()</span> método elimina el primer elemento de un arreglo.</p>
+                <div class="row">
+                    <a href="#" class="button invert" id="shift_button">shift</a>
+                </div>
+                <div class="row array_container" id="shift_result"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button invert" id="shift_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_shift.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="unshift">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.unshift()</h2>
+                <p>El <span class="code">unshift()</span> agrega un nuevo elemento al inicio de un arreglo.</p>
+                <div class="row">
+                    <input type="text" id="unshift_input">
+                    <a href="#" class="button invert" id="unshift_button">unshift</a>
+                </div>
+
+                <div class="row array_container" id="unshift_result"></div>
+            </div>
+
+            <div class="row buttons">
+                <a href="#" class="button invert" id="unshift_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_unshift.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="slice">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.slice()</h2>
+                <p>El metodo de <span class="code">slice()</span> devuelve los
+                    elementos seleccionados en un arreglo, como uno nuevo.</p>
+                <div class="row">
+                    <input type="number" id="slice_input_start" placeholder="start">
+                    <input type="number" id="slice_input_end" placeholder="end">
+                    <a href="#" class="button invert" id="slice_button">slice</a>
+                </div>
+
+                <div class="row array_container" id="slice_result"></div>
+            </div>
+
+            <div class="row buttons">
+                <a href="#" class="button invert" id="slice_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_slice.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="splice">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.splice()</h2>
+                <p>El metodo de <span class="code">splice()</span> elimina elementos de un arreglo, .</p>
+                <div class="row">
+                    <input type="number" id="splice_input_start" placeholder="posicion">
+                    <input type="number" id="splice_input_end" placeholder="cantidad">
+                    <a href="#" class="button invert" id="splice_button">splice</a>
+                </div>
+
+                <div class="row array_container" id="splice_result"></div>
+            </div>
+
+            <div class="row buttons">
+                <a href="#" class="button invert" id="splice_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_splice.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="reverse">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.reverse()</h2>
+                <p>
+                    El método <span class="code">reverse()</span> sobrescribe el arreglo e invierte el orden sus los elementos.
+                </p>
+                <div class="row">
+                    <a href="#" class="button invert" id="reverse_button">reverse</a>
+                </div>
+                <div class="row array_container" id="reverse_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button invert" id="reverse_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modal_reverse.js"></script>
+        </div>
+    </section>
+    <script src="scripts/modal.js"></script>
+</body>
+</html>

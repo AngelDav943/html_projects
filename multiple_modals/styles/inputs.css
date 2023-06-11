@@ -1,0 +1,41 @@
+
+input {
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+a.button {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 50px;
+    border: 1px solid;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.button.invert {
+    color: #000;
+    border-color: black;
+}
+a.button.invert:hover {
+    color: #fff;
+    border-color: white;
+    background-color: black;
+}
+
+a.button:hover {
+    background-color: #fff;
+    color: #1e3c72;
+}
+
+a.button.--disabled {
+    color: #ffffff8a;
+    border-color: #ffffff8a;
+    pointer-events: none;
+}
