@@ -2,7 +2,7 @@ const forEach_button = document.querySelector("#forEach_button")
 const forEach_display = document.querySelector("#forEach_display")
 
 let forEach_array = ["manzanas", "peras", "mangos", "bananas", "kiwi", "mandarinas", "naranjas", "melon", "sandias", "maracuya"]
-display(forEach_display, forEach_array)
+display(forEach_display, forEach_array, "forEach")
 
 let forEach_started = false
 forEach_button.addEventListener('click', (e) => {

@@ -86,9 +86,21 @@ a img {
     padding: 0.4em;
 }
 
-span.code {
+.code {
+    display: inline-block;
+    margin: 0.1em 0px;
     color: #a78cff;
     background-color: #10103dbf;
-    padding: 0.2em;
+    padding: 0.2em 0.3em;
     word-wrap: break-word;
+}
+
+.code.true {
+    color: greenyellow;
+    background-color: #000000bf;
+}
+
+.code.false {
+    color: red;
+    background-color: #000000bf;
 }

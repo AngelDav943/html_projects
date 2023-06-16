@@ -7,12 +7,12 @@ let filter_array = []
 for (let i = 0; i <= 100; i++) {
     filter_array.push(i)
 }
-display(filter_display, filter_array)
+display(filter_display, filter_array, "filter")
 
 filter_button.addEventListener('click', (e) => {
     e.preventDefault()
     let result = filter_array.filter(item => {
         return item >= parseInt(filter_input.value)
     })
-    display(filter_display, result)
+    display(filter_display, result, "filter")
 })

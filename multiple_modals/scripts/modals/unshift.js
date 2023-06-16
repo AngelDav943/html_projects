@@ -10,7 +10,7 @@ unshift_button.addEventListener('click', (e) => {
     e.preventDefault()
     unshift_array.unshift(unshift_input.value)
     unshift_input.value = ""
-    display(unshift_result, unshift_array)
+    display(unshift_result, unshift_array, "unshift")
 })
 
 unshift_restart.addEventListener('click', (e) => {

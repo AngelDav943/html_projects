@@ -7,16 +7,16 @@ let reverse_base = [
 ]
 let reverse_array = [...reverse_base]
 
-display(reverse_display, reverse_array)
+display(reverse_display, reverse_array, "reverse")
 
 reverse_button.addEventListener('click', (e) => {
     e.preventDefault()
     reverse_array.reverse()
-    display(reverse_display, reverse_array)
+    display(reverse_display, reverse_array, "reverse")
 })
 
 reverse_restart.addEventListener('click', (e) => {
     e.preventDefault()
     reverse_array = [...reverse_base]
-    display(reverse_display, reverse_array)
+    display(reverse_display, reverse_array, "reverse")
 })

@@ -55,7 +55,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_push.js"></script>
+            <script src="scripts/modals/push.js"></script>
         </div>
     </section>
 
@@ -76,7 +76,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_pop.js"></script>
+            <script src="scripts/modals/pop.js"></script>
         </div>
     </section>
 
@@ -85,7 +85,7 @@
             <div class="content">
                 <h2>array.indexOf()</h2>
                 <p>
-                    El método de <span class="code">indexOf()</span> devuelve el primer índice (posición) de un valor especificado
+                    El método de <span class="code">indexOf()</span> devuelve el <b>primer</b> índice (posición) de un valor especificado
                     y devuelve -1 si no se encuentra el valor.
                 </p>
                 <div class="row">
@@ -101,7 +101,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_indexOf.js"></script>
+            <script src="scripts/modals/indexOf.js"></script>
         </div>
     </section>
 
@@ -114,7 +114,8 @@
                     elementos que pasen una prueba proporcionada por una función.
                 </p>
                 <div class="row">
-                    <span>number >= <input type="number" id="filter_input"></span>
+                    <span style="width: 70%;">number >=</span>
+                    <input type="number" id="filter_input">
                     <a href="#" class="button invert" id="filter_button">filter</a>
                 </div>
                 <div class="row array_container" id="filter_display"></div>
@@ -125,7 +126,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_filter.js"></script>
+            <script src="scripts/modals/filter.js"></script>
         </div>
     </section>
 
@@ -151,7 +152,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_map.js"></script>
+            <script src="scripts/modals/map.js"></script>
         </div>
     </section>
 
@@ -173,7 +174,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_forEach.js"></script>
+            <script src="scripts/modals/forEach.js"></script>
         </div>
     </section>
 
@@ -196,7 +197,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_sort.js"></script>
+            <script src="scripts/modals/sort.js"></script>
         </div>
     </section>
 
@@ -220,7 +221,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_find.js"></script>
+            <script src="scripts/modals/find.js"></script>
         </div>
     </section>
 
@@ -245,7 +246,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_join.js"></script>
+            <script src="scripts/modals/join.js"></script>
         </div>
     </section>
 
@@ -266,7 +267,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_shift.js"></script>
+            <script src="scripts/modals/shift.js"></script>
         </div>
     </section>
 
@@ -290,7 +291,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_unshift.js"></script>
+            <script src="scripts/modals/unshift.js"></script>
         </div>
     </section>
 
@@ -316,7 +317,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_slice.js"></script>
+            <script src="scripts/modals/slice.js"></script>
         </div>
     </section>
 
@@ -341,7 +342,7 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_splice.js"></script>
+            <script src="scripts/modals/splice.js"></script>
         </div>
     </section>
 
@@ -364,7 +365,180 @@
                     <span>Close</span>
                 </a>
             </div>
-            <script src="scripts/modal_reverse.js"></script>
+            <script src="scripts/modals/reverse.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="lastIndexOf">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.lastIndexOf()</h2>
+                <p>
+                    El método de <span class="code">lastIndexOf()</span> devuelve el <b>ultimo</b> índice (posición) de un valor especificado
+                    y devuelve -1 si no se encuentra el valor.
+                </p>
+                <div class="row">
+                    <input type="number" id="lastIndexOf_input">
+                    <a href="#" class="button invert" id="lastIndexOf_button">lastIndexOf</a>
+                    <div id="lastIndexOf_result"></div>
+                </div>
+                <div class="row array_container" id="lastIndexOf_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modals/lastIndexOf.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="includes">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.includes()</h2>
+                <p>
+                    El método de <span class="code">includes()</span> devuelve el <span class="code true">true</span> si se encuentra el elemento dentro del arreglo
+                    y devuelve <span class="code false">false</span> cuando no encuentra ningun elemento igual al valor dado.
+                </p>
+                <div class="row">
+                    <input type="text" id="includes_input">
+                    <a href="#" class="button invert" id="includes_button">includes</a>
+                    <div id="includes_result"></div>
+                </div>
+                <div class="row array_container" id="includes_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modals/includes.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="concat">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.concat()</h2>
+                <p>
+                    El método <span class="code">concat()</span> une dos o mas arreglos en uno.
+                </p>
+                <div class="row" id="concat_buttons">
+                </div>
+                <div id="concat_results"></div>
+                <div class="row array_container" id="concat_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button invert" id="concat_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modals/concat.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="some">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.some()</h2>
+                <p>
+                    El método de <span class="code">some()</span> verifica si algun elemento del arreglo pase la prueba dada por una funcion con <span class="code">return</span>.
+                    Cuando un elemento pase la prueba devolvera <span class="code true">true</span> y se detendrá.
+                </p>
+                <div class="row">
+                    <span>number ></span>
+                    <input type="number" id="some_input">
+                    <a href="#" class="button invert" id="some_button">some</a>
+                    <div id="some_result"></div>
+                </div>
+                <div class="row array_container" id="some_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modals/some.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="every">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.every()</h2>
+                <p>
+                    El método de <span class="code">every()</span> verifica si algun elemento del arreglo pase la prueba dada por una funcion con <span class="code">return</span>.
+                    Si algun elemento no pasa la prueba devolvera <span class="code false">false</span> y si todos pasan devolvera <span class="code true">true</span>.
+                </p>
+                <div class="row">
+                    <span>number ></span>
+                    <input type="number" id="every_input">
+                    <a href="#" class="button invert" id="every_button">every</a>
+                    <div id="every_result"></div>
+                </div>
+                <div class="row array_container" id="every_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modals/every.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="reduce">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.reduce()</h2>
+                <p>
+                    El método <span class="code">reduce()</span> se utiliza para reducir un array a un solo valor,
+                    aplicando una función acumuladora a cada elemento del arreglo.
+                </p>
+                <div class="row">
+                    <a href="#" class="button invert" id="reduce_button">reduce</a>
+                    <span class="code" id="reduce_result">0</span>
+                </div>
+                <div class="row array_container" id="reduce_display"></div>
+            </div>
+            <div class="row buttons">
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modals/reduce.js"></script>
+        </div>
+    </section>
+
+    <section class="modal" id="from">
+        <div class="modal_container">
+            <div class="content">
+                <h2>array.from()</h2>
+                <p>El metodo de <span class="code">from()</span> convierte elementos iterables (como un string) en arreglos.</p>
+                <div class="row">
+                    <input type="text" id="from_input">
+                    <a href="#" class="button invert" id="from_button">from</a>
+                </div>
+
+                <div class="row array_container" id="from_result"></div>
+            </div>
+
+            <div class="row buttons">
+                <a href="#" class="button invert" id="from_restart">reset</a>
+                <a href="#" class="button modal_close">
+                    <img class="btn_img" src="images/exit.png" alt="X">
+                    <span>Close</span>
+                </a>
+            </div>
+            <script src="scripts/modals/from.js"></script>
         </div>
     </section>
     <script src="scripts/modal.js"></script>

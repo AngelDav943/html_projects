@@ -6,12 +6,12 @@ let shift_array = [
     "Manzana", "Uva", "Piña", "Pera", "Mango", "Arándano", "Banana", "Kiwi", "Zapote", "Sandia",
     "Mandarina", "Naranja", "Tamarindo", "Melon", "Maracuya", "Fresa", "Coco", "Durazno", "Limon"
 ]
-display(shift_result, shift_array)
+display(shift_result, shift_array, "shift")
 
 shift_button.addEventListener('click', (e) => {
     e.preventDefault()
     shift_array.shift()
-    display(shift_result, shift_array)
+    display(shift_result, shift_array, "shift")
 })
 
 shift_restart.addEventListener('click', (e) => {
@@ -20,5 +20,5 @@ shift_restart.addEventListener('click', (e) => {
         "Manzana", "Uva", "Piña", "Pera", "Mango", "Arándano", "Banana", "Kiwi", "Zapote", "Sandia",
         "Mandarina", "Naranja", "Tamarindo", "Melon", "Maracuya", "Fresa", "Coco", "Durazno", "Limon"
     ]
-    display(shift_result, shift_array)
+    display(shift_result, shift_array, "shift")
 })

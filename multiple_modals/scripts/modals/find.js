@@ -8,17 +8,17 @@ let find_array = [
     "Mandarina", "Naranja", "Tamarindo", "Melon", "Maracuya", "Fresa", "Coco", "Durazno", "Limon"
 ]
 
-display(find_display, find_array)
+display(find_display, find_array, "find")
 
 find_button.addEventListener('click', (e) => {
     e.preventDefault()
     let result = [find_array.find(item => {
         return item.toLowerCase() == find_input.value.toLowerCase()
     })]
-    display(find_display, result)
+    display(find_display, result, "find")
 })
 
 find_restart.addEventListener('click', (e) => {
     e.preventDefault()
-    display(find_display, find_array)
+    display(find_display, find_array, "find")
 })

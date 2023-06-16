@@ -12,17 +12,17 @@ function map_generate_array() {
 
 let map_array = []
 map_generate_array()
-display(map_display, map_array)
+display(map_display, map_array, "map")
 
 map_button.addEventListener('click', (e) => {
     e.preventDefault()
     map_array = map_array.map(item => {
         return item * parseInt(map_input.value)
     })
-    display(map_display, map_array)
+    display(map_display, map_array, "map")
 })
 
 map_restart.addEventListener('click', (e) => {
     map_generate_array()
-    display(map_display, map_array)
+    display(map_display, map_array, "map")
 })

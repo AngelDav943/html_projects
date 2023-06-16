@@ -9,15 +9,15 @@ let splice_array = [
     "Manzana", "Uva", "Piña", "Pera", "Mango", "Arándano", "Banana", "Kiwi", "Zapote", "Sandia",
     "Mandarina", "Naranja", "Tamarindo", "Melon", "Maracuya", "Fresa", "Coco", "Durazno", "Limon"
 ]
-display(splice_result, splice_array)
+display(splice_result, splice_array, "splice")
 
 splice_button.addEventListener('click', (e) => {
     e.preventDefault()
     let result = [...splice_array].splice(splice_input_start.value, splice_input_end.value)
-    display(splice_result, result)
+    display(splice_result, result, "splice")
 })
 
 splice_restart.addEventListener('click', (e) => {
     e.preventDefault()
-    display(splice_result, splice_array)
+    display(splice_result, splice_array, "splice")
 })

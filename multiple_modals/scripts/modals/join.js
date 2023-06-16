@@ -8,7 +8,7 @@ let join_array = [
     "Manzana", "Uva", "Piña", "Pera", "Mango", "Arándano", "Banana", "Kiwi", "Zapote", "Sandia",
     "Mandarina", "Naranja", "Tamarindo", "Melon", "Maracuya", "Fresa", "Coco", "Durazno", "Limon"
 ]
-display(join_display, join_array)
+display(join_display, join_array, "join")
 
 join_button.addEventListener('click', (e) => {
     e.preventDefault()
@@ -17,6 +17,6 @@ join_button.addEventListener('click', (e) => {
 
 join_restart.addEventListener('click', (e) => {
     e.preventDefault()
-    display(join_display, join_array)
+    display(join_display, join_array, "join")
     join_result.innerHTML = ''
 })

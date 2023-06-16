@@ -7,15 +7,15 @@ let sort_array = [
     "Mandarina", "Naranja", "Tamarindo", "Melon", "Maracuya", "Fresa", "Coco", "Durazno", "Limon"
 ]
 
-display(sort_display, sort_array)
+display(sort_display, sort_array, "sort")
 
 sort_button.addEventListener('click', (e) => {
     e.preventDefault()
     let result = [...sort_array].sort()
-    display(sort_display, result)
+    display(sort_display, result, "sort")
 })
 
 sort_restart.addEventListener('click', (e) => {
     e.preventDefault()
-    display(sort_display, sort_array)
+    display(sort_display, sort_array, "sort")
 })
