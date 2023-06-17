@@ -8,9 +8,11 @@ push_result.innerHTML = "<span> </span>"
 
 push_button.addEventListener('click', (e) => {
     e.preventDefault()
-    push_array.push(push_input.value)
-    push_input.value = ""
-    display(push_result, push_array, "push")
+    if (push_input.value != "" ) {
+        push_array.push(push_input.value)
+        push_input.value = ""
+        display(push_result, push_array, "push")
+    }
 })
 
 push_restart.addEventListener('click', (e) => {
