@@ -1,0 +1,33 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    background: linear-gradient(#111111bd, #000000c4);
+}
+
+.modal_container {
+    margin: auto;
+    width: 100%;
+    height: calc(100% - 96px);
+    max-width: 400px;
+    max-height: 500px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.modal.--show {
+    opacity: 1;
+    pointer-events: inherit;
+    transition: opacity .6s;
+}

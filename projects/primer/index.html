@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/modal.css">
+    </head>
+    <body>
+        <header>
+            <span>LOGO</span>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Lorem</a>
+                <a href="#">Ipsum</a>
+            </nav>
+        </header>
+
+        <main>
+            <img src="images/bob.png" alt="bob">
+            <article>
+                <h2>Lorem ipsum dolor sit</h2>
+                <p>Amet consectetur adipisicing elit. Nostrum reiciendis asperiores nisi doloremque.</p>
+                <div class="row">
+                    <a class="button filled" href="#" id="contact">Contact us</a>
+                    <a class="button" href="#">Ipsum</a>
+                </div>
+            </article>
+        </main>
+
+        <section class="modal">
+            <div class="modal_container">
+                <div class="row">
+                    <h2 class="modal_titulo">Send mail to us</h2>
+                    <img src="images/computer.png" alt="" width="75" height="75">
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Title" id="title">
+                    <textarea placeholder="Description" name="" id="description" cols="30" rows="10"></textarea>
+                    <input type="button" id="submit" value="Send">
+                </form>
+                <a href="#" class="button filled" id="close">Close</a>
+            </div>
+        </section>
+    </body>
+    <script src="modal.js"></script>
+</html>
