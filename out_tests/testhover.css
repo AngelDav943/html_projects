@@ -27,7 +27,6 @@ nav a:hover {
 nav a:hover .popup {
     display: block;
     position: fixed;
-    left: 0%;
     top:50px;
 }
 
