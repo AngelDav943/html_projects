@@ -34,7 +34,7 @@ nav div.context {
     background: #252525;
 }
 
-nav a:hover div.context {
+nav a:hover > div.context {
     display: block;
     position: fixed;
     top:50px;

@@ -1,0 +1,22 @@
+#testimonios {
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.testimonio {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transition: transform .6s;
+}
+
+.testimonio img {
+    border-radius: 100%;
+    height: 200px;
+}
+
+#testimonios .title {
+    font-size: 2em;
+}
