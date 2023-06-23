@@ -22,11 +22,6 @@ nav {
 nav .item {
     height: max-content;
 }
-
-nav div.context.show {
-    display: flex;
-}
-
 nav div.context {
     position: absolute;
     display: none;
@@ -34,8 +29,8 @@ nav div.context {
     background: #252525;
 }
 
-nav a:hover > div.context {
-    display: block;
+nav .item:hover .context {
+    display: flex;
     position: fixed;
     top:50px;
 }
