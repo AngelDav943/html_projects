@@ -1,0 +1,35 @@
+#carousel {
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    gap: 4em;
+    max-width: calc(100% - 80px);
+    transition: all 1s;
+    scroll-behavior: smooth;
+}
+
+#carousel img {
+    position: relative;
+    margin: auto;
+    object-fit: contain;
+    height: 100%;
+}
+
+#carousel .buttons {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    max-width: calc(100vw - 80px);
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button {
+    border: none;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    border-radius: 100%;
+}
