@@ -1,7 +1,8 @@
 html {
     min-height: 100%;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
