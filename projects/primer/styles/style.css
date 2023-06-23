@@ -42,7 +42,7 @@ main img {
     height: 50%;
 }
 
-article {
+section {
     width: 100%;
     max-width: 300px;
 }
@@ -60,16 +60,20 @@ a.button.filled {
     color:white;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav a {
     display: inline-block;
     text-decoration: none;
-    padding: 10px;
-    height: 30px;
+    padding: 15px;
     color: white;
+    height: 20px;
 }
 nav a:hover {
     background-color: #00000017;
-    height: 100%;
 }
 
 form #title {
