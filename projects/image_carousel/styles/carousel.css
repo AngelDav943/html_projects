@@ -17,9 +17,10 @@
 
 #carousel .buttons {
     position: absolute;
+    left: 0;
     z-index: 2;
     width: 100%;
-    max-width: calc(100vw - 80px);
+    max-width: calc(100vw);
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -28,8 +29,25 @@
 
 .buttons button {
     border: none;
-    height: 100px;
-    width: 100px;
-    padding: 20px;
+    height: 20vw;
+    width: 20vw;
+    max-height: 100px;
+    max-width: 100px;
+    padding: 2.5%;
     border-radius: 100%;
+}
+
+.buttons button:hover {
+    filter: invert(1);
+}
+
+@media screen and (max-width: 420px) {
+    #carousel {
+        max-width: 100%;
+    }
+
+    #carousel > img {
+        height: auto;
+        width: 100vw;
+    }
 }
