@@ -1,16 +1,16 @@
-const testimonios = document.querySelectorAll(".testimonio")
+function rgbtohex(red,green,blue) {
+    let rgb = [red, green, blue]
+    let hex = [rgb[0].toString(16), rgb[1].toString(16), rgb[2].toString(16)]
 
-var current = 0
-function update(transitions) {
-    testimonios.forEach((element, index) => {
-        element.style.transform = "translate("+ ( (index - current) * 150) +"vw ,"+ (index * -400) +"px)"
-        if (transitions == true) element.style.transition = "transform 1s"
+    hex = hex.map(item => {
+        if (item.length == 1) return "0" + item
+        return item
     })
-    current += 1
-    if (current >= testimonios.length) current = 0
-}
-update(false)
 
-setInterval(() => {
-    update(true);
-}, 2000)
+    return ("#" + hex.join('').toUpperCase())
+}
+
+
+function generator(base) {
+
+}
