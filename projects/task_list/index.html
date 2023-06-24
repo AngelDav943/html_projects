@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <aside>
+        <img src="images/photo.jpg" alt="person">
+        <div class="buttons">
+            <a href="#">Home</a>
+            <a href="#">Tasks</a>
+            <a href="#">Calendar</a>
+            <a href="#">More info</a>
+        </div>
+        <h3><span>ToDo List</span></h3>
+    </aside>
+    <main>
+        <div class="inputs">
+            <input id="newtask_input" type="text" name="" placeholder="task name">
+            <input id="newtask_button" type="button" value="Add task" onclick="addTask()">
+        </div>
+        <div class="tasks"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

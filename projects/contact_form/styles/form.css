@@ -43,6 +43,10 @@ form .input {
     border-radius: 8px;
 }
 
+form .input:focus {
+    outline: none;
+}
+
 form #submit {
     width: 100%;
     display: inline-block;
@@ -51,4 +55,10 @@ form #submit {
     background-color: #5f9ea0;
     color:white;
     border: none;
+}
+
+@media screen and (max-width: 700px) {
+    .form img {
+        display: none;
+    }
 }
