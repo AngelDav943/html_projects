@@ -15,6 +15,5 @@ items.forEach(item => {
         if (parent != context && parent != item) {
             context.classList.remove("show")
         }
-
     })
 })

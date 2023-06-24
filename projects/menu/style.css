@@ -13,10 +13,13 @@ body {
 
 nav {
     display: flex;
-    background-color: #252525;
     margin: 0;
     height: 50px;
     align-items: center;
+}
+
+nav:hover {
+    background-color: #252525;
 }
 
 nav .item {
@@ -39,13 +42,13 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     font-size: larger;
-    color: #f2f2f2;
+    color: #252525;
     height: 30px;
     line-height: 30px;
 }
 
-nav a:hover {
-    background-color: gray;
+nav:hover a {
+    color: #f2f2f2;
 }
 
 main {

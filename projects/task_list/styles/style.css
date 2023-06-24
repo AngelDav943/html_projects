@@ -24,6 +24,7 @@ input[type="button"] {
 }
 
 .task {
+    margin: 1em;
     padding: 5px 1em;
     border: solid #252525 1px;
     border-radius: 10px;
@@ -46,5 +47,5 @@ input[type="button"] {
 }
 
 .task.-selected > span {
-    
+    text-decoration-line: line-through;
 }
