@@ -1,6 +1,6 @@
-function rgbtohex(red,green,blue) {
+function rgbtohex(red,green,blue) { // Convierte un rgb (255, 255, 255) a un color hexadecimal (#FFFFFF)
 
-    function limit(color) {
+    function limit(color) { // Limita el color dado a un rango de 0 a 255
         return Math.min(Math.max(color, 0), 255)
     }
 
@@ -15,9 +15,9 @@ function rgbtohex(red,green,blue) {
     return ("#" + hex.join('').toUpperCase())
 }
 
-function hextorgb(hex) {
+function hextorgb(hex) { // Convierte un color hexadecimal (#FFFFFF) a rgb (255, 255, 255)
     let hexcolor = hex.replace("#","").split("")
-    if (hexcolor.length != 3 && hexcolor.length < 6) return
+    if (hexcolor.length < 6) return // verifica que el color hexadecimal sea valido
 
     let red = ""
     let green = ""
@@ -31,18 +31,18 @@ function hextorgb(hex) {
 
     let colors = [red, green, blue];
     
-    colors = colors.map(item => {
+    colors = colors.map(item => { // Convierte los numeros de base 16 a base 10
         return parseInt(item, 16)
     })
     
-    if (isNaN(colors[0]) || isNaN(colors[1]) || isNaN(colors[2])) return
+    if (isNaN(colors[0]) || isNaN(colors[1]) || isNaN(colors[2])) return // Verifica que los numeros sean validos
     return colors
 }
 
 const input = document.querySelector('#color_input')
 const outputs = document.querySelector("#output").querySelectorAll("div")
 
-function generator() {
+function generator() { // Genera la paleta de colores
     let rgb_base = hextorgb(input.value)
     input.value = ""
     if (rgb_base == undefined) return

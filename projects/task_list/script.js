@@ -2,7 +2,7 @@ const input = document.querySelector("#newtask_input")
 const display = document.querySelector(".tasks")
 var tasks = []
 
-function displayTasks() {
+function displayTasks() { // Muestra las tareas en pantalla
     let result = ""
     for (let index = 0; index < tasks.length; index++) {
         const element = tasks[index];
@@ -15,19 +15,19 @@ function displayTasks() {
     display.innerHTML = result
 }
 
-function addTask() {
+function addTask() { // Agrega una nueva tarea
     if (input.value.replaceAll(" ","") == "") return
     tasks.push(input.value)
     input.value = ""
     displayTasks()
 }
 
-function deleteTask(index) {
+function deleteTask(index) { // Elimina la tarea
     if (index >= 0 && index < tasks.length) tasks.splice(index, 1)
     displayTasks()
 }
 
-function selectTask(index) {
+function selectTask(index) { // Selecciona una tarea
     const task = document.getElementById(index)
     task.classList.toggle("-selected")
 }
