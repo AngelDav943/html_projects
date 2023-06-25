@@ -42,7 +42,15 @@ nav a:hover {
 }
 
 @media screen and (max-width: 360px) {
-  nav {
-      display: none;
-  }
+    nav {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .logo span {
+        display: none;
+    }
 }
