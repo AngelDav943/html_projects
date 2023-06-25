@@ -89,3 +89,8 @@ input[type="button"] {
     align-items: center;
     justify-content: center;
 }
+
+#output div div {
+    color: white;
+    mix-blend-mode: difference;
+}

@@ -55,7 +55,7 @@ function generator() { // Genera la paleta de colores
         
         let result = rgbtohex(r, g, b)
         if (result != undefined) {
-            div.innerHTML = [r,g,b].join(", ")
+            div.innerHTML = `<div>${[r,g,b].join(", ")}<br>${result}</div>`
             div.style.backgroundColor = result
         }
     })
