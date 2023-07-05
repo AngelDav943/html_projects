@@ -5,6 +5,15 @@ html {
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 4px;
+}
+
 body {
     width: 100%;
     margin: 0;
