@@ -1,31 +1,49 @@
 const market = [
     {
         "name":"Tomate",
+        "image":"cart.png",
         "price": 10,
         "amount":1
     },
     {
         "name":"Lechuga",
-        "price": 10,
-        "amount":1
-    },
-    {
-        "name":"Manzana",
-        "price": 10,
-        "amount":1
-    },
-    {
-        "name":"Pan",
-        "price": 10,
-        "amount":1
-    },
-    {
-        "name":"Leche",
+        "image":"cart.png",
         "price": 10,
         "amount":1
     },
     {
         "name":"Zanahoria",
+        "image":"cart.png",
+        "price": 10,
+        "amount":1
+    },
+    {
+        "name":"Zanahoria",
+        "image":"cart.png",
+        "price": 10,
+        "amount":1
+    },
+    {
+        "name":"Zanahoria",
+        "image":"cart.png",
+        "price": 10,
+        "amount":1
+    },
+    {
+        "name":"Zanahoria",
+        "image":"carrot.png",
+        "price": 10,
+        "amount":1
+    },
+    {
+        "name":"Hamburgesa",
+        "image":"hamburger.png",
+        "price": 10,
+        "amount":1
+    },
+    {
+        "name":"Pizza",
+        "image":"pizza.png",
         "price": 10,
         "amount":1
     },
