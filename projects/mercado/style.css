@@ -1,0 +1,88 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gainsboro;
+    height: 100%;
+    margin: 0px;
+}
+
+main {
+    min-height: 100%;
+    margin: auto;
+    max-width: 700px;
+    background-color: #f2f8ff;
+    display: flex;
+}
+
+aside {
+    padding: 20px;
+    width: 100%;
+    max-width: 225px;
+    border-right: #0000001f solid 1px;
+}
+
+aside .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside img {
+    height: 50px;
+}
+
+article {
+    padding: 10px;
+    display: flex;
+}
+
+#market article {
+    height: 125px;
+}
+
+#cart article {
+    height: 75px;
+    width: calc(100% - 40px);
+}
+
+article img {
+    height: 100%;
+}
+
+article .name {
+    font-weight: bolder;
+}
+
+article .price {
+    background-color: orange;
+    color: white;
+    width: fit-content;
+    padding: 0.1em 0.3em;
+    border-radius: 0.3em;
+}
+
+article input {
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    border: none;
+    transition: all 0.2s;
+}
+
+#market article input {
+    background-color: greenyellow;
+}
+
+#cart article input {
+    background-color: red;
+    color: white;
+}
+
+article input:hover {
+    font-weight: bolder;
+    border-radius: 0.75em;
+    box-shadow: 0px 0px 10px #00000040;
+}
