@@ -1,49 +1,31 @@
 const market = [
     {
         "name":"Tomate",
-        "image":"cart.png",
         "price": 10,
         "amount":1
     },
     {
         "name":"Lechuga",
-        "image":"cart.png",
+        "price": 10,
+        "amount":1
+    },
+    {
+        "name":"Manzana",
+        "price": 10,
+        "amount":1
+    },
+    {
+        "name":"Pan",
+        "price": 10,
+        "amount":1
+    },
+    {
+        "name":"Leche",
         "price": 10,
         "amount":1
     },
     {
         "name":"Zanahoria",
-        "image":"cart.png",
-        "price": 10,
-        "amount":1
-    },
-    {
-        "name":"Zanahoria",
-        "image":"cart.png",
-        "price": 10,
-        "amount":1
-    },
-    {
-        "name":"Zanahoria",
-        "image":"cart.png",
-        "price": 10,
-        "amount":1
-    },
-    {
-        "name":"Zanahoria",
-        "image":"carrot.png",
-        "price": 10,
-        "amount":1
-    },
-    {
-        "name":"Hamburgesa",
-        "image":"hamburger.png",
-        "price": 10,
-        "amount":1
-    },
-    {
-        "name":"Pizza",
-        "image":"pizza.png",
         "price": 10,
         "amount":1
     },
@@ -55,7 +37,6 @@ var content = ""
 for (let index = 0; index < market.length; index++) {
     const item = market[index]
     content += `<article>
-        <img src="images/${item.image}" alt="${item.name}">
         <div>
             <p class="name">${item.name} <span class="price">${item.price}</span> </p>
             <input type="button" value="Buy" onclick="buy(${index})">
@@ -70,7 +51,6 @@ function displayCart() {
     for (let index = 0; index < cart.length; index++) {
         const item = cart[index]
         content += `<article>
-        <img src="images/${item.image}" alt="${item.name}">
         <div>
         <p class="name">${item.name} (${item.amount}) <span class="price">${item.price}</span> </p>
         <input type="button" value="-" onclick="remove(${index})">
