@@ -1,24 +1,37 @@
-html {
+:root {
     height: 100%;
+    --background: white;
+    --primary: black;
+    --secondary: black;
+    --shadow: #00000080;
+}
+
+body.dark {
+    --background: #1c1c1c;
+    --primary: white;
+    --secondary: #aaaaaa;
+    --shadow: #ffffff80;
 }
 
 body {
     margin: 0px;
     height: 100%;
+    background-color: var(--background);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.5s;
 }
 
 #clock {
-    box-shadow: -5px 15px 20px -5px #00000080,
-        inset -5px 15px 20px -5px #00000080;
+    box-shadow: -5px 15px 20px -5px #00000080, inset -5px 15px 20px -5px var(--shadow);
     border-radius: 100%;
     max-width: 80vw;
     max-height: 80vw;
     width: 50vh;
     height: 50vh;
+    transition: box-shadow 1s;
 }
 
 #clock span{
@@ -31,13 +44,15 @@ body {
     justify-content: center;
     align-items: center;
     font-size: calc(2vw + 2vh);
+    color: white;
+    mix-blend-mode: difference;
 }
 
 #clock .point {
     position:absolute;
     top: calc(50% - 1vw);
     left: calc(50% - 1vw);
-    background-color: black;
+    background-color: var(--primary);;
     border-radius: 100%;
     
     max-width: 2vw;
@@ -49,7 +64,7 @@ body {
 #clock .hand {
     position:absolute;
     top: calc(50%);
-    background-color: black;
+    background-color: var(--secondary);
     transform-origin: center top;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
