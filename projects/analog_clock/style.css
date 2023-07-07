@@ -33,7 +33,7 @@ body {
 }
 
 body.dark #clock {
-    box-shadow: -5px 15px 20px -5px #00000080, 5px -15px 20px -5px #ffffff80;
+    box-shadow: -5px 15px 20px -5px #00000080, 5px -15px 30px -10px #ffffff2d;
     transition: box-shadow 2s;
 }
 
