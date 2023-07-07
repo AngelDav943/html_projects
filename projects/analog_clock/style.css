@@ -3,14 +3,12 @@
     --background: white;
     --primary: black;
     --secondary: black;
-    --shadow: #00000080;
 }
 
 body.dark {
     --background: #1c1c1c;
     --primary: white;
     --secondary: #aaaaaa;
-    --shadow: #ffffff80;
 }
 
 body {
@@ -25,13 +23,18 @@ body {
 }
 
 #clock {
-    box-shadow: -5px 15px 20px -5px #00000080, inset -5px 15px 20px -5px var(--shadow);
+    box-shadow: -5px 15px 20px -5px #00000080, inset -5px 15px 20px -5px #00000080;
     border-radius: 100%;
     max-width: 80vw;
     max-height: 80vw;
     width: 50vh;
     height: 50vh;
     transition: box-shadow 1s;
+}
+
+body.dark #clock {
+    box-shadow: -5px 15px 20px -5px #00000080, 5px -15px 20px -5px #ffffff80;
+    transition: box-shadow 2s;
 }
 
 #clock span{
