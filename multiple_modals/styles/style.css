@@ -72,8 +72,8 @@ a img {
     background-color: orange;
     color: white;
     width: auto;
-    height: 50px;
-    padding: 0.5em;
+    min-height: 50px;
+    padding: 0px 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
