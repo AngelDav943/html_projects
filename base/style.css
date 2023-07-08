@@ -17,8 +17,31 @@ body {
 a {
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 a:visited {
     color: gray;
+}
+
+a::before {
+    display: inline-block;
+    content: '';
+    height: 1.5em;
+    width: 1.5em;
+    filter: contrast(0);
+}
+
+a.doc::before {
+    background: url("../base/document_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a.fol::before {
+    background: url("../base/folder.png");
+    background-size: 1.2em 1.2em;
+    background-position: center;
+    background-repeat: no-repeat;
 }
