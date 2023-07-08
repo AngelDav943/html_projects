@@ -12,7 +12,7 @@ function displayTasks() { // Muestra las tareas en pantalla
             <button onClick="deleteTask(${index})"><img src="images/trashcan.svg"></button>
         </div>`
     }
-    displayCart.innerHTML = result
+    display.innerHTML = result
 }
 
 function addTask() { // Agrega una nueva tarea
