@@ -1,0 +1,50 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #333;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: orange;
+    color: white;
+
+    border-radius: 1em;
+    max-width: 500px;
+    min-height: 300px;
+
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em 0px;
+}
+
+main.selected {
+    background-color: #eeffff;
+    color: #333;
+}
+
+input {
+    border: none;
+    border-radius: 2em;
+    height: 1em;
+    padding: 0.5em 1em;
+    max-width: 100%;
+}
+
+input:focus {
+    outline: 1px solid black;
+    box-shadow: inset 0px 0px 10px -5px black;
+}

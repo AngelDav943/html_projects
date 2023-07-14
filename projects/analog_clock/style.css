@@ -25,10 +25,10 @@ body {
 #clock {
     box-shadow: -5px 15px 20px -5px #00000080, inset -5px 15px 20px -5px #00000080;
     border-radius: 100%;
-    max-width: 80vw;
-    max-height: 80vw;
-    width: 50vh;
-    height: 50vh;
+    max-width: 80vmin;
+    max-height: 80vmin;
+    width: 100%;
+    height: 100%;
     transition: box-shadow 1s;
 }
 
@@ -46,22 +46,22 @@ body.dark #clock {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(2vw + 2vh);
+    font-size: 7vmin;
     color: white;
     mix-blend-mode: difference;
 }
 
 #clock .point {
     position:absolute;
-    top: calc(50% - 1vw);
-    left: calc(50% - 1vw);
+    top: calc(50% - 2vmin);
+    left: calc(50% - 2vmin);
     background-color: var(--primary);;
     border-radius: 100%;
-    
-    max-width: 2vw;
-    max-height: 2vw;
-    width: 4vh;
-    height: 4vh;
+
+    max-width: 4vmin;
+    max-height: 4vmin;
+    width: 100%;
+    height: 100%;
 }
 
 #clock .hand {
@@ -74,18 +74,18 @@ body.dark #clock {
 }
 
 #clock #hours {
-    height: 10%;
-    width: 8px;
-    left: calc(50% - 4px);
+    height: 15vmin;
+    width: 2vmin;
+    left: calc(50% - 1vmin);
 }
 #clock #minutes {
-    height: 15%;
-    width: 4px;
-    left: calc(50% - 2px);
+    height: 20vmin;
+    width: 1vmin;
+    left: calc(50% - 0.5vmin);
 }
 #clock #seconds {
-    height: 20%;
-    width: 2px;
+    height: 30vmin;
+    width: 0.5vmin;
     background-color: red;
-    left: calc(50% - 1px);
+    left: calc(50% - 0.25vmin);
 }
