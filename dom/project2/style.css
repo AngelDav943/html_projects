@@ -17,8 +17,8 @@ main {
     color: white;
 
     border-radius: 1em;
-    max-width: 500px;
-    min-height: 300px;
+    max-width:  calc(300px - 4em);
+    min-height: calc(300px - 4em);
 
     width: 100%;
     height: fit-content;
@@ -28,27 +28,5 @@ main {
     justify-content: center;
     align-items: center;
 
-    padding: 2em 0px;
-}
-
-main.selected {
-    background-color: #eeffff;
-    color: #333;
-}
-
-input {
-    border: none;
-    border-radius: 2em;
-    height: 1em;
-    padding: 0.5em 1em;
-    max-width: 100%;
-}
-
-main.selected input {
-    background-color: #00000033;
-}
-
-input:focus {
-    outline: 1px solid black;
-    box-shadow: inset 0px 0px 10px -5px black;
+    padding: 2em;
 }
