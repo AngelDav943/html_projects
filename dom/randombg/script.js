@@ -2,7 +2,7 @@ const background = document.getElementById("background")
 const button = document.getElementById("button")
 
 // Funcion de cambio de color
-function change(element) {
+function change() {
     var r = Math.floor(Math.random() * 255) // Asigna un color aleatorio para el valor Rojo
     var g = Math.floor(Math.random() * 255) // Asigna un color aleatorio para el valor Verde
     var b = Math.floor(Math.random() * 255) // Asigna un color aleatorio para el valor Azul
