@@ -10,5 +10,6 @@ function change(element) {
     // Convierte valores rgb a codigo hexadecimal y lo asigna al texto del boton
     button.innerText = `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`
 
+    // Actualiza el color del fondo
     background.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 }
