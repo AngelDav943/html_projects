@@ -1,9 +1,14 @@
 const background = document.getElementById("background")
+const button = document.getElementById("button")
 
-function change() {
-    var r = Math.floor(Math.random() * 255)
-    var g = Math.floor(Math.random() * 255)
-    var b = Math.floor(Math.random() * 255)
+// Funcion de cambio de color
+function change(element) {
+    var r = Math.floor(Math.random() * 255) // Asigna un color aleatorio para el valor Rojo
+    var g = Math.floor(Math.random() * 255) // Asigna un color aleatorio para el valor Verde
+    var b = Math.floor(Math.random() * 255) // Asigna un color aleatorio para el valor Azul
+
+    // Convierte valores rgb a codigo hexadecimal y lo asigna al texto del boton
+    button.innerText = `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`
 
     background.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
 }
