@@ -45,7 +45,6 @@ main {
     height: 100%;
     width: 4px;
     background-color: greenyellow;
-    transition: all 200ms linear(0 0%, 1 100%) 0s;
     z-index: 2;
 }
 
@@ -53,4 +52,5 @@ main {
     padding: 5px 10px;
     background-color: #292f3d;
     color: white;
+    animation-duration: 1s;
 }
