@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: 100vh;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background: linear-gradient(#D9D9D9, #95b5ea);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    min-width: 400px;
+    padding: 2em;
+    border-radius: 2em;
+    background-color: #ff5555;
+    color: white;
+}
+
+#top {
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    background-color: #ff5555;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#inputs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    border: none;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    max-width: 100%;
+}
+
+#list {
+    position: sticky;
+    top: 200px;
+}
+
+.task {
+    color: black;
+    background-color: #ffa986;
+    border-radius: 10px;
+    height: 4em;
+    max-width: 400px;
+
+    padding: 10px;
+    margin-bottom: 1em;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    overflow-wrap: anywhere;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttons i {
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+}
+
+.buttons .destroy {
+    background: url("./images/unchecked.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+.buttons .complete {
+    background: url("./images/checked.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+
+.buttons i:hover {
+    background-color: #ffffff4e;
+    transition: background-color 0.5s;
+}
+
+.task.selected {
+    color: white;
+    background-color: #704444;
+}
+
+.task.selected .buttons .complete {
+    filter: hue-rotate(227deg);
+}
+
+.task > img {
+    height: 100%;
+}
+
+.task.selected > img {
+    opacity: 0.1;
+}
+
+#imageModal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000007f;
+    z-index: 2;
+    display: none;
+}
+
+#imageModal > img {
+    min-width: 90vmin;
+    max-height: 90vmin;
+}
+
+#imageModal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
