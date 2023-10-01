@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <script src="https://unpkg.com/mathjs@11.11.1/lib/browser/math.js"></script>
+</head>
+
+<body>
+    <script src="./script.js"></script>
+
+    <div class="calculator">
+        <div class="display" id="display">
+            
+        </div>
+        <div class="buttons">
+            <div class="row right">
+                <button class="image" onClick="inputadd(this)" id="(">
+                    <img src="./images/startparenthesis.png" alt="">
+                </button>
+                <button class="image" onClick="inputadd(this)" id=")">
+                    <img src="./images/endparenthesis.png" alt="">
+                </button>
+                <button class="image" onClick="wipe(this)">
+                    <img src="./images/clear.png" alt="">
+                </button>
+                <button class="image" onClick="remove(this)">
+                    <img src="./images/remove.png" alt="">
+                </button>
+            </div>
+            <div class='row'>
+                <div class="grid">
+                    <button class="image" onClick="inputadd(this)" id="1">
+                        <img src="./images/numbers/one.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="2">
+                        <img src="./images/numbers/two.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="3">
+                        <img src="./images/numbers/three.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="4">
+                        <img src="./images/numbers/four.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="5">
+                        <img src="./images/numbers/five.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="6">
+                        <img src="./images/numbers/six.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="7">
+                        <img src="./images/numbers/seven.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="8">
+                        <img src="./images/numbers/eight.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="9">
+                        <img src="./images/numbers/nine.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="0">
+                        <img src="./images/numbers/zero.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id=".">
+                        <img src="./images/dot.png" alt="">
+                    </button>
+                    <button class="image" onClick="calculate(this)" id="=">
+                        <img src="./images/equal.png" alt="">
+                    </button>
+                </div>
+                <div class="column">
+                    <button class="image" onClick="inputadd(this)" id="/">
+                        <img src="./images/divide.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="*">
+                        <img src="./images/multiply.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="-">
+                        <img src="./images/minus.png" alt="">
+                    </button>
+                    <button class="image" onClick="inputadd(this)" id="+">
+                        <img src="./images/plus.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

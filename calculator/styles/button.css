@@ -1,0 +1,9 @@
+button.image {
+    border: none;
+    background: none;
+}
+
+button.image img {
+    height: 5em;
+    width: 5em;
+}
