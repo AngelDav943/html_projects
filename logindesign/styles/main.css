@@ -1,0 +1,78 @@
+:root {
+    --blue: #4d7dff;
+    --darkblue: #3c55e6;
+    --transparent-blue: #5c74ff2d;
+    --outline: #0000002d;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    transition: 0.2s box-shadow;
+}
+
+main {
+    border: solid 1px var(--outline);
+    border-radius: 10px;
+
+    background-color: white;
+    color: black;
+    
+    margin: auto;
+    padding: 30px;
+    max-height: 400px;
+    height: 100%;
+
+    max-width: 300px;
+    width: calc(100% - 60px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img[alt="Logo"] {
+    max-width: 150px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+body:has(input[type="submit"]:hover) {
+    box-shadow: inset 0px 0px 200px -100px var(--blue);
+}
+
+body:has(input[type="submit"]:active) {
+    box-shadow: inset 0px 0px 300px -50px var(--blue);
+}
+
+@media screen and (max-width: calc(300px + 60px)) {
+    main {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        
+    }
+
+    .row {
+        justify-content: space-around;
+    }
+
+    .row input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: calc(400px + 60px)) {
+    main {
+        border-radius: 0;
+        border-top: none;
+        border-bottom: none;
+        height: max-content;
+    }
+}

@@ -1,0 +1,53 @@
+:root {
+    --blue: #4d7dff;
+    --darkblue: #3c55e6;
+    --transparent-blue: #5c74ff2d;
+    --outline: #0000002d;
+}
+
+a {
+    margin-top: 8px;
+    color: var(--blue);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input {
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 0.75em 0.8em;
+    
+    border: none;
+    outline: solid 1px var(--outline);
+    border-radius: 0.25em;
+}
+
+input:focus::placeholder {
+    transition: 0.2s color;
+    color: var(--outline);
+}
+
+input[type="submit"] {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="button"], button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--blue)
+}
+
+input[type="button"]:hover, button:hover {
+    color: var(--darkblue);
+    cursor: pointer;
+    background-color: var(--transparent-blue);
+}
+
+input:not([type="submit"], [type="button"]):focus {
+    outline: solid 2px var(--blue);
+    transition: 0.1s outline;
+}
