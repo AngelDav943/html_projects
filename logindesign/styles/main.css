@@ -18,7 +18,7 @@ main {
 
     background-color: white;
     color: black;
-    
+
     margin: auto;
     padding: 30px;
     max-height: 400px;
@@ -29,7 +29,10 @@ main {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+}
+
+main p.title {
+    margin-bottom: 0;
 }
 
 img[alt="Logo"] {
@@ -51,12 +54,11 @@ body:has(input[type="submit"]:active) {
     box-shadow: inset 0px 0px 300px -50px var(--blue);
 }
 
-@media screen and (max-width: calc(300px + 60px)) {
+@media screen and (max-width: calc(400px + 60px)) {
     main {
         background-color: transparent;
         border-radius: 0;
         border: none;
-        
     }
 
     .row {
@@ -68,11 +70,12 @@ body:has(input[type="submit"]:active) {
     }
 }
 
-@media screen and (max-height: calc(400px + 60px)) {
+@media screen and (max-height: 460px) {
     main {
         border-radius: 0;
         border-top: none;
         border-bottom: none;
-        height: max-content;
+        min-height: 460px;
+        height: auto;
     }
 }

@@ -22,8 +22,11 @@ input {
     border-radius: 0.25em;
 }
 
-input:focus::placeholder {
+input::placeholder {
     transition: 0.2s color;
+}
+
+input:focus::placeholder {
     color: var(--outline);
 }
 
@@ -51,3 +54,12 @@ input:not([type="submit"], [type="button"]):focus {
     outline: solid 2px var(--blue);
     transition: 0.1s outline;
 }
+
+input[type="submit"]:active {
+    background-color: var(--darkblue);
+}
+
+/*input:has([type="submit"], [type="button"]):active {
+    outline: solid 2px var(--blue);
+    transition: 0.1s outline;
+}*/
