@@ -1,17 +1,10 @@
-:root {
-    --blue: #4d7dff;
-    --darkblue: #3c55e6;
-    --transparent-blue: #5c74ff2d;
-    --outline: #0000002d;
-}
-
 a {
     color: var(--blue);
     cursor: pointer;
     text-decoration: none;
 }
 
-input, button {
+input, button, a.button, a.submit {
     font-size: 1em;
     padding: 0.75em 0.8em;
     
@@ -28,21 +21,21 @@ input:focus::placeholder {
     color: var(--outline);
 }
 
-input[type="submit"] {
+input[type="submit"], a.submit  {
     background-color: var(--blue);
     color: white;
     cursor: pointer;
     outline: none;
 }
 
-input[type="button"], button {
+input[type="button"], button, a.button {
     outline: none;
     border: none;
     background-color: transparent;
     color: var(--blue)
 }
 
-input[type="button"]:hover, button:hover {
+input[type="button"]:hover, button:hover, a.button:hover {
     color: var(--darkblue);
     cursor: pointer;
     background-color: var(--transparent-blue);
@@ -53,15 +46,10 @@ input:not([type="submit"], [type="button"]):focus {
     transition: 0.1s outline;
 }
 
-input[type="button"]:active, button:active {
+input[type="button"]:active, button:active, a.button:active {
     outline: 2px solid var(--blue);
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active, a.submit:active {
     background-color: var(--darkblue);
 }
-
-/*input:has([type="submit"], [type="button"]):active {
-    outline: solid 2px var(--blue);
-    transition: 0.1s outline;
-}*/
