@@ -1,0 +1,18 @@
+header {
+    width: calc(100% - 2em);
+    background-color: white;
+    border-bottom: 1px solid var(--outline);
+    height: 3em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+
+    position: sticky;
+    top: 0;
+}
+
+header img[alt="Logo"] {
+    height: 3em;
+}
