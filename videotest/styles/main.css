@@ -13,10 +13,7 @@ body {
 section {
     width: 90%;
     font-size: 1em;
-    
-    
-    padding: 25px 5%;
-    margin-top: 50px;
+    padding: 0px 5%; /* 25px 5% */
 }
 
 section.item {
@@ -27,21 +24,27 @@ section.item {
     flex-direction: row;
 }
 
-section.item.book {
-    border-top: 1px solid var(--outline);
-    border-bottom: 1px solid var(--outline);
-    background-color: #dddcdd;
-}
-
 section.item.reverse {
     flex-direction: row-reverse;
 }
 
-section.item article {
-    max-width: 600px;
+section.outlined {
+    border-top: 1px solid var(--outline);
+    border-bottom: 1px solid var(--outline);
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-section video {
+section.gray {
+    background-color: #dddcdd;
+}
+
+
+section.item article {
+    max-width: 500px;
+}
+
+section video, section img {
     max-width: 400px;
     width: 100%;
 }
