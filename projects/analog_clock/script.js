@@ -19,7 +19,7 @@ for (let index = 1; index <= 12; index++) {
     let num = document.createElement("span")
 
     position(num, index)
-    
+
     num.id = index
     num.innerHTML = index
     numbersContainer.appendChild(num);
