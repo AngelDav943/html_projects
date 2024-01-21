@@ -50,7 +50,42 @@ input[type="button"]:hover, button:hover {
 
 input:not([type="submit"], [type="button"]):focus {
     outline: solid 2px var(--blue);
-    transition: 0.1s outline;
+    transition: 0.1s outline-color;
+}
+
+label {
+    display: contents;
+}
+
+label:has(input)::before {
+    content: attr(placeholder);
+    background-color: white;
+    color: #00000070;
+    width: fit-content;
+    z-index: 1;
+    
+    padding: 0px 5px;
+    margin-left: calc(0.8em - 5px);
+    margin-top: -1em;
+    height: 1em;
+    
+    position: relative;
+    top: 0.4rem;
+    font-size: 0.9em;
+
+    transition: color 0.1s, top 0.1s, left 0.1s, font-size 0.1s;
+}
+
+label:has(input:placeholder-shown)::before {
+    top: 1.75rem;
+    font-size: 1em;
+}
+
+label:has(input:focus)::before {
+    opacity: 1;
+    color: var(--blue);
+    top: 0.4rem;
+    font-size: 0.9em;
 }
 
 input[type="button"]:active, button:active {
@@ -60,8 +95,3 @@ input[type="button"]:active, button:active {
 input[type="submit"]:active {
     background-color: var(--darkblue);
 }
-
-/*input:has([type="submit"], [type="button"]):active {
-    outline: solid 2px var(--blue);
-    transition: 0.1s outline;
-}*/
