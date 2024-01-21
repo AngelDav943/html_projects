@@ -57,16 +57,22 @@ label {
     display: contents;
 }
 
+label input::placeholder {
+    color: transparent !important;
+}
+
 label:has(input)::before {
     content: attr(placeholder);
+    display: block;
     background-color: white;
     color: #00000070;
-    width: fit-content;
     z-index: 1;
     
     padding: 0px 5px;
     margin-left: calc(0.8em - 5px);
     margin-top: -1em;
+
+    width: fit-content;
     height: 1em;
     
     position: relative;
