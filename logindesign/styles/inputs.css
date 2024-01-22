@@ -48,6 +48,10 @@ input[type="button"]:hover, button:hover {
     background-color: var(--transparent-blue);
 }
 
+input:autofill {
+    background: rgb(232, 240, 254);
+}
+
 input:not([type="submit"], [type="button"]):focus {
     outline: solid 2px var(--blue);
     transition: 0.1s outline-color;
@@ -65,7 +69,7 @@ label:has(input)::before {
     content: attr(placeholder);
     display: block;
     background-color: white;
-    color: #00000070;
+    color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     
     padding: 0px 5px;
@@ -79,7 +83,8 @@ label:has(input)::before {
     top: 0.4rem;
     font-size: 0.9em;
 
-    transition: color 0.1s, top 0.1s, left 0.1s, font-size 0.1s;
+    cursor: text;
+    transition: top .1s, font-size .1s;
 }
 
 label:has(input:placeholder-shown)::before {
@@ -87,8 +92,11 @@ label:has(input:placeholder-shown)::before {
     font-size: 1em;
 }
 
+label:has(input:autofill)::before {
+    background: linear-gradient(white 55%, rgb(232, 240, 254) 55%);
+}
+
 label:has(input:focus)::before {
-    opacity: 1;
     color: var(--blue);
     top: 0.4rem;
     font-size: 0.9em;
