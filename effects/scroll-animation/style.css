@@ -1,0 +1,65 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    --outline: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid var(--outline);
+}
+
+article {
+    /* font-size: 1.5rem; */
+    border: 1px solid var(--outline);
+    border-radius: 0.5rem;
+    padding: 2rem 3rem;
+    margin: 2rem 0;
+}
+
+article h1::before {
+    content: '';
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background: url('./star.png');
+    background-size: contain;
+    vertical-align: bottom;
+    margin-right: .5rem;
+}
+
+article h1 {
+    /* height: 2rem; */
+}
+
+.timeline {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    height: 1rem;
+    background-color: greenyellow;
+
+    z-index: 1000;
+
+    width: 100%;
+    scale: 0 1;
+
+    transform-origin: left;
+    animation: scroll-timeline linear;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-timeline {
+    to {
+        scale: 1 1;
+    }
+}

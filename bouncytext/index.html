@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="bouncy">Hello world</h1>
+    </main>
+    <script>
+        let bouncytext = document.querySelector(".bouncy")
+        let newhtml = bouncytext.textContent.split("").map((letter, index) => {
+            if (letter == " ") return `<span style="width:0.3em;"></span>`
+            return `<span style="animation-delay:-${(bouncytext.textContent.length - index) / 5}s;">${letter}</span>`
+        }).join('')
+        bouncytext.innerHTML = newhtml
+    </script>
+</body>
+
+</html>

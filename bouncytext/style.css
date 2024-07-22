@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    font-size: 2rem;
+}
+
+.bouncy {
+    --speed: 2s;
+}
+
+.bouncy * {
+    display: inline-block;
+    animation: bounce var(--speed) infinite ease-in-out;
+    transform: translate(0px, 0.2em) scale(1);
+    -webkit-transform: translate(0px, 0.2em) scale(1);
+}
+
+@keyframes bounce {
+
+    30% {
+        opacity: 0.3;
+    }
+
+    60% {
+        transform: translate(0px, -0.2em);
+        -webkit-transform: translate(0px, -0.2em);
+        opacity: 1;
+    }
+}
