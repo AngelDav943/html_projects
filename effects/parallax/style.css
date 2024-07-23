@@ -17,11 +17,11 @@ hr {
 }
 
 .parallax {
-	background: linear-gradient(0deg, orange 25%, transparent 30%);
+	background: linear-gradient(0deg, orange 30%, transparent 38%);
 
 	transform-style: preserve-3d;
 	perspective: 1px;
-	padding-bottom: 450px;
+	padding-bottom: 500px;
 	height: 200px;
 	display: grid;
 	justify-items: center;
