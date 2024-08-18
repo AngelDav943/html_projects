@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goo {
+    filter: blur(10px) url('./goo.svg#goo');
+}
+
+.goo span {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.goo #two {
+    animation: bounce 5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    from {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: 100px;
+    }
+
+    to {
+        margin-top: 0px;
+    }
+}

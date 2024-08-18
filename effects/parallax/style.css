@@ -201,16 +201,11 @@ article .icon::before {
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
+    width: 1vw;
+	max-width: 1rem;
+	background-color: rgb(46, 46, 46);
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-	background: orange;
-	/* background-color: transparent; */
-}
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
-	background: var(--outline);
+    background: orange;
 }

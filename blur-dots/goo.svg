@@ -1,0 +1,29 @@
+<svg id="filter" xmlns="http://www.w3.org/2000/svg" version="1.1" >
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur
+                id="blur"
+                result="blurred"
+                in="SourceGraphic"
+                stdDeviation="30"
+            ></feGaussianBlur>
+            <feColorMatrix
+                id="adjust"
+                result="adjusted"
+                in="blurred"
+                values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 60 -30"
+                type="matrix"
+            ></feColorMatrix>
+            <feComposite
+                id="combine"
+                result="combined"
+                in="adjusted"
+                operator="atop"
+            ></feComposite>
+        </filter>
+    </defs>
+</svg>

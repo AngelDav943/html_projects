@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll {
+    --percent: 100%;
+    width: 400px;
+    height: 400px;
+    display: grid;
+
+    animation: spin 2s linear 1s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.scroll div {
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+
+    background-size: 400px !important;
+
+    transition: width 2s, margin 2s;
+}
+
+.scroll #one {
+    background: url(./images/hamburger.png);
+    width: calc(100% - var(--percent));
+    background-position: right;
+    margin-left: var(--percent);
+}
+
+.scroll #two {
+    background: url(./images/pizza.png);
+    width: var(--percent);
+}
+
+
+@keyframes spin {
+    0% {
+        --percent: 0%;
+    }
+
+    100% {
+        --percent: 100%;
+    }
+}
