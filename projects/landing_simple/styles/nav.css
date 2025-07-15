@@ -5,14 +5,17 @@ body {
 }
 
 header {
+    /* background: #f3f3ea; */
+    backdrop-filter: blur(5px);
     position: sticky;
-    top: 0;
-    padding: 2em;
+    top: 0px;
+    padding: 16px 32px;
     max-width: 950px;
     margin: auto;
-    height: 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 15px;
     align-items: center;
     z-index: 2;
 }
@@ -47,14 +50,4 @@ nav a:hover {
 
 span {
     color: #e63d00;
-}
-
-@media screen and (max-width: 600px) {
-    header {
-        justify-content: center;
-    }
-
-    nav {
-        display: none;
-    }
 }
