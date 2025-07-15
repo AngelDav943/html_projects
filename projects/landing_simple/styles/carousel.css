@@ -1,0 +1,17 @@
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 950px;
+}
+
+#photos img {
+    width: 300px;
+    margin: auto;
+    object-fit: contain;
+    transition: opacity 0.5s;
+}
+
+#photos:has(img:hover) img:not(:hover) {
+    opacity: 0.5;
+}

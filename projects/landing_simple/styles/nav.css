@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    color: #000000;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 2em;
+    max-width: 950px;
+    margin: auto;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    height: 36px;
+    background-color: #ce3700;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+nav a:hover {
+    outline: 2px solid #ce3700;
+    color: #ce3700;
+    background: transparent;
+}
+
+span {
+    color: #e63d00;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        display: none;
+    }
+}

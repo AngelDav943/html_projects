@@ -9,6 +9,8 @@ function position(num, index) {
     let angle = (Math.PI / 180) * (90 - (index * 30));
     let diameter = clock.clientWidth * 0.8
 
+    // let radius = ((itemwidth + gap ) / sin(inner-angle)) * -1
+
     let x = Math.cos(angle) * (diameter / 2);
     let y = Math.sin(angle) * (diameter / 2);
 
