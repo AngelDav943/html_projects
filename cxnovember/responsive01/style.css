@@ -27,6 +27,13 @@ header {
 	align-items: center;
 }
 
+header .logo {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 aside {
 	position: sticky;
 	top: 4rem;
@@ -72,7 +79,6 @@ button#menu {
 	display: none;
 	background-color: transparent;
 	border: none;
-
 }
 
 @media screen and (max-width: 340px) {
@@ -95,9 +101,9 @@ button#menu {
 	}
 
 	header.open {
+		flex-direction: column;
 		height: 100vh;
-		align-items: start;
-		padding: 1rem;
+		padding: 0px 1rem;
 	}
 
 	header.open nav {
