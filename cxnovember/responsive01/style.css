@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	scroll-behavior: smooth;
+}
+
+header {
+	height: 3rem;
+	padding: 0 1rem;
+	width: 100%;
+
+	position: fixed;
+
+	background-color: black;
+	color: white;
+
+	top: 0;
+	z-index: 1;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+aside {
+	position: sticky;
+	top: 4rem;
+	height: 100dvh;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	height: 100%;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+
+main {
+	margin: auto;
+	max-width: 800px;
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+}
+
+article {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid black;
+}
+
+article img {
+	margin: 1rem 0;
+	width: 100%;
+}
+
+article p {
+	margin: .5rem 0;
+}
+
+button#menu {
+	display: none;
+	background-color: transparent;
+	border: none;
+
+}
+
+@media screen and (max-width: 340px) {
+	main {
+		flex-direction: column-reverse;
+	}
+
+	aside {
+		margin-top: 3rem;
+		height: auto;
+		position: unset;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	button#menu {
+		display: block;
+	}
+
+	header.open {
+		height: 100vh;
+		align-items: start;
+		padding: 1rem;
+	}
+
+	header.open nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
