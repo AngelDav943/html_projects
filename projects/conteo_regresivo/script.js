@@ -6,8 +6,8 @@ const minutes = countdown.querySelector("#minutes")
 const seconds = countdown.querySelector("#seconds")
 
 setInterval(() => {
-    var difference = 1735707600000 - Date.now()
-    
+    var difference = new Date("Jan 1 2026").getTime() - Date.now()
+
     const time = {
         days    : Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours   : Math.floor((difference / (1000 * 60 * 60)) % 24),
