@@ -1,0 +1,156 @@
+:root {
+	--primario: rgb(211, 128, 32);
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: var(--primario);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 2;
+}
+
+.logo {
+	font-style: italic;
+	color: white;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 20px;
+	margin-right: 10px;
+	outline: 3px solid transparent;
+	transition: outline-color .4s;
+}
+
+nav a:hover {
+	outline-color: white;
+}
+
+h2 {
+	color: var(--primario);
+	text-align: center;
+}
+
+main {
+	margin: 1rem;
+	max-width: 850px;
+	margin: auto;
+}
+
+#welcome {
+	text-align: center;
+	padding: 20vh 0;
+}
+
+#welcome img {
+	max-width: 400px;
+	aspect-ratio: 1;
+	border-radius: 100%;
+}
+
+#gallery {
+	padding-top: 8rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+	transition: filter .3s, transform .3s;
+}
+
+.image {
+	overflow: hidden;
+	border-radius: 10px;
+	height: 420px;
+	flex-grow: 1;
+	flex-basis: 280px;
+	position: relative;
+}
+
+.image::before {
+	content: attr(data-content);
+	position: absolute;
+	bottom: 2rem;
+	width: 100%;
+
+	text-align: center;
+	font-size: 2.5rem;
+	color: white;
+
+	z-index: 1;
+	opacity: 0;
+
+	transition: opacity .5s;
+}
+
+.image:hover img {
+	filter: blur(15px);
+	transform: scale(1.4);
+}
+
+.image:hover::before {
+	opacity: 1;
+}
+
+#contact {
+	margin: 25vh 0;
+}
+
+form {
+	padding: 0 1rem;
+	max-width: 500px;
+	margin: auto;
+}
+
+form input, form textarea, form button {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	border: 2px solid var(--primario);
+	border-radius: 10px;
+	outline: none;
+	padding: .6rem .7rem;
+
+	margin-top: .5rem;
+	margin-bottom: 1rem;
+}
+
+form textarea {
+	resize: none;
+	height: 200px;
+}
+
+form button {
+	background-color: var(--primario);
+	color: white;
+	font-weight: bold;
+	transition: background .4s, color .4s;
+}
+
+form button:hover {
+	background-color: white;
+	color: black;
+}
+
+@media screen and (max-width:420px) {
+	nav {
+		display: none;
+	}
+}
